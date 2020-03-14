@@ -6,37 +6,40 @@
 com.rdweb.starter伴你开发web
 项目demo:
    首先pom.xm导入rdweb:
-   <dependency>
-       <groupId>com.rdweb.starter</groupId>
-       <artifactId>rdweb-spring-boot-starter</artifactId>
-       <version>1.0-SNAPSHOT</version>
-   </dependency>
+   
+    <dependency>
+        <groupId>com.rdweb.starter</groupId>
+        <artifactId>rdweb-spring-boot-starter</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
 
    Web 连接数据库
    Pom.xml 导入数据库驱动依赖
    例：mysql驱动
-   <dependency>
-       <groupId>mysql</groupId>
-       <artifactId>mysql-connector-java</artifactId>
-       <scope>runtime</scope>
-   </dependency>
+   
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <scope>runtime</scope>
+    </dependency>
 
 application.properties配置连接数据库四大元素：
-rd.web.jdbc.driverClass=com.mysql.cj.jdbc.Driver
-rd.web.jdbc.url=jdbc:mysql:///mybatis
-rd.web.jdbc.userName=root
-rd.web.jdbc.password=123456
+
+    rd.web.jdbc.driverClass=com.mysql.cj.jdbc.Driver
+    rd.web.jdbc.url=jdbc:mysql:///mybatis
+    rd.web.jdbc.userName=root
+    rd.web.jdbc.password=123456
 
 
 如若使用cache缓存需要在主程序添加注解@EnableCaching
 
-@EnableCaching
-@SpringBootApplication
-public class Test1Application {
-    public static void main(String[] args) {
-        SpringApplication.run(Test1Application.class, args);
+    @EnableCaching
+    @SpringBootApplication
+    public class Test1Application {
+        public static void main(String[] args) {
+            SpringApplication.run(Test1Application.class, args);
+        }
     }
-}
 
 不使用cache 缓存可以不用添加
 
@@ -136,4 +139,4 @@ public class Test1Application {
         jdbc.noquery(sql);
         return "更新成功"; 
     }
-}
+    }
