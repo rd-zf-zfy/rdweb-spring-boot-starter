@@ -41,9 +41,10 @@ public class Test1Application {
 不使用cache 缓存可以不用添加
 
 编写Controller测试
+    
+    @RestController
+    public class appController {
 
-@RestController
-public class appController {
     @Autowired
     JDBC jdbc;//连接数据库管理器
     @Autowired
@@ -133,8 +134,6 @@ public class appController {
     public String view9(){
         String sql="update  userinfo set password =’sasasa’ where userName=’1100001’";
         jdbc.noquery(sql);
-        return "更新成功";  
-  }
-
+        return "更新成功"; 
+    }
 }
-
