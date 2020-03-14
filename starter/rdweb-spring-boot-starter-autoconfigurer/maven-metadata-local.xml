@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.rdweb.starter</groupId>
+  <artifactId>rdweb-spring-boot-starter-autoconfigurer</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20200314023007</lastUpdated>
+  </versioning>
+</metadata>
