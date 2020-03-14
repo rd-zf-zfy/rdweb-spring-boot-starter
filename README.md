@@ -5,7 +5,7 @@
 使用Cache 缓存技术实现解决web开发数较多加载慢的问题
 com.rdweb.starter伴你开发web
 项目demo:
-   首先Pom.xm导入rdweb:
+   首先pom.xm导入rdweb:
    <dependency>
        <groupId>com.rdweb.starter</groupId>
        <artifactId>rdweb-spring-boot-starter</artifactId>
